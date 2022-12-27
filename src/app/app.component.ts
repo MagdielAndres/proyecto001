@@ -9,7 +9,7 @@ export class AppComponent {
   title = 'proyecto001';
 
   nombre = 'Magdiel Andrés Castellanos';
-  edad = 30;
+  edad = 18;
   email = 'magdiel.castellanos.cursoinfotec@gmail.com';
   sueldos = [1700, 1600, 1900];
   activo = true;
@@ -30,4 +30,17 @@ export class AppComponent {
     }
     return suma;
   }
+
+  //Botones para incrementar
+  contador = 1;
+  incrementar(){
+    this.contador++;
+  }
+  decrementar(){
+    this.contador--;
+  }
+
+  //tomanando el valor del input
+  direccion = "";
+  telefono = "";
 }
